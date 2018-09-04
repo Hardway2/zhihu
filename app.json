@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/latest/latest",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Hardway日报",
+    "navigationBarTextStyle":"black"
+  }
+}

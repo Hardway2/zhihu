@@ -1,0 +1,25 @@
+@import "../../wxParse/wxParse.wxss"; 
+
+.art-header{
+    position: relative;
+    width: 100%;
+    color: #FFF;
+}
+
+.art-img{
+    width: 100%;
+}
+
+.art-title{
+    position: absolute;
+    bottom: 36px;
+    left: 10px;
+    font-size: 16px;
+}
+
+.art-source {
+    position: absolute;
+    bottom: 15px;
+    right: 15px; 
+    font-size: 10px;  
+}

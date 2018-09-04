@@ -1,0 +1,28 @@
+<view class="container">
+  <swiper class="swiper" indicator-dots="true" indicator-active-color="#fff"
+  autoplay="true" interval="3000" duration="2000">
+    <block wx:for="{{top_stories}}" wx:key="top_stories">
+      <swiper-item class="swiper-item">
+        <image class="swiper-image" src="{{item.image}}" id='{{item.id}}' mode="aspectFill" bindtap='showDetail'/>
+        <text class="swiper-title">{{item.title}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="news-container">
+    <block wx:for="{{stories}}" wx:key="stories">
+      <view class='news-item' id='{{item.id}}' bindtap='showDetail'>
+        <text class='news-title'>{{item.title}}</text>
+        <image class='news-image' src='{{item.images[0]}}' mode="aspectFill"/>       
+      </view>
+    </block>
+  </view>
+  <view class="news-container">
+    <block wx:for="{{beforeStories}}" wx:key="beforeStories">
+      <text class='news-date' wx:if="{{item.header}}">{{item.header}}</text>
+      <view class='news-item' wx:else id='{{item.id}}' bindtap='showDetail'>
+        <text class='news-title'>{{item.title}}</text>
+        <image class='news-image' src='{{item.images[0]}}' mode="aspectFill"/>       
+      </view>
+    </block>
+  </view>
+</view>
